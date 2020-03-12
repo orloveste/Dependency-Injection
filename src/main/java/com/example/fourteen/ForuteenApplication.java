@@ -18,12 +18,8 @@ public class ForuteenApplication {
 
         }
     }
-    @Data
-    @AllArgsConstructor
-    @NoArgsConstructor
-    class Elevi{
-        private Integer idElev;
-        private String numeElev;
+    record Elevi (Integer idElev, String numeElev){
+
     }
 
     class EleviService{}
