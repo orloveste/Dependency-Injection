@@ -1,11 +1,16 @@
 package com.legacy;
 
-public class MyApplication {
-    private EmailService email = new EmailService();
+public class MyApplication implements Consumer {
 
-    public void processMessages(String msg, String rec){
+    private MessageService service;
 
-        this.email.sendEmail(msg, rec);
+    public MyApplication(MessageService svc){
+        this.service = svc;
+    }
+
+    @Override
+    public void processMessages(String msg, String rec) {
+        this.service.sendMessage(msg, rec);
     }
 }
 
