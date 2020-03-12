@@ -18,9 +18,9 @@ public class ForuteenApplication {
 
         }
     }
-    record Elevi (Integer idElev, String numeElev){
-
-    }
+//    record Elevi (Integer idElev, String numeElev){
+//
+//    }
 
     class EleviService{}
 }
