@@ -15,7 +15,7 @@ public class MyApplicationJUnitTest {
         injector = new MessageServiceInjector() {
             @Override
             public Consumer getConsumer() {
-                return new MyApplication(new MessageService() {
+//                return new MyApplication(new MessageService() {
                     @Override
                     public void sendMessage(String msg, String rec) {
                         System.out.println("Test message service implementation? ");
