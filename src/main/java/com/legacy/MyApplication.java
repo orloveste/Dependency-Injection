@@ -4,8 +4,9 @@ public class MyApplication implements Consumer {
 
     private MessageService service;
 
-    public MyApplication(MessageService svc){
-        this.service = svc;
+    public MyApplication(){}
+    public void setService(MessageService service){
+        this.service = service;
     }
 
     @Override
